@@ -1,0 +1,453 @@
+html, body {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  overflow-x: hidden; }
+
+/*------------------------------------------Header.css--------------------------------------------*/
+.navbar {
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto; }
+  .navbar .fluid-container {
+    width: 90%;
+    height: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto; }
+    .navbar .fluid-container .navbar-header {
+      position: relative;
+      transform: translatey(90%); }
+      .navbar .fluid-container .navbar-header img {
+        width: 35%;
+        height: auto; }
+    .navbar .fluid-container .navbar-nav {
+      padding-top: 1em;
+      padding-right: 0;
+      padding-bottom: 1em;
+      padding-left: 0; }
+      .navbar .fluid-container .navbar-nav li {
+        text-transform: uppercase; }
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  background: transparent; }
+
+@media (min-width: 320px) and (max-width: 960px) {
+  .navbar .fluid-container .navbar-header {
+    transform: translatey(0%); }
+    .navbar .fluid-container .navbar-header img {
+      width: 30%;
+      height: auto;
+      margin-top: 3%;
+      margin-right: auto;
+      margin-bottom: auto;
+      margin-left: auto; } }
+@media (min-width: 600px) and (orientation: portrait) {
+  .navbar .fluid-container .navbar-header img {
+    width: 20%;
+    height: auto;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto; } }
+@media (min-width: 768px) and (orientation: portrait) {
+  .navbar .fluid-container .navbar-header img {
+    width: 35%;
+    height: auto;
+    margin-top: 8%;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto; } }
+/*--------------------------------------------Home.css--------------------------------------------------*/
+#home {
+  display: table;
+  width: 100%;
+  height: auto; }
+  #home .content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; }
+    #home .content #banner {
+      display: table;
+      width: 100%;
+      height: 100%; }
+      #home .content #banner img {
+        width: 100%;
+        height: 100%; }
+    #home .content #about {
+      background-color: #009688;
+      padding-top: 2em;
+      padding-right: 0;
+      padding-bottom: 2em;
+      padding-left: 0; }
+      #home .content #about .col-md-4 {
+        text-align: center; }
+        #home .content #about .col-md-4 h3 {
+          color: white; }
+        #home .content #about .col-md-4 p {
+          width: 80%;
+          height: auto;
+          margin-top: auto;
+          margin-right: auto;
+          margin-bottom: auto;
+          margin-left: auto;
+          line-height: 2em; }
+    #home .content #feature {
+      padding-top: 4em;
+      padding-right: 0;
+      padding-bottom: 4em;
+      padding-left: 0; }
+      #home .content #feature .col-md-12 {
+        text-align: center; }
+        #home .content #feature .col-md-12 h1 {
+          font-size: 2.5em;
+          text-transform: uppercase;
+          font-family: 'Cabin', sans-serif;
+          color: #F44336; }
+        #home .content #feature .col-md-12 p {
+          font-size: 1.1em;
+          font-weight: 500; }
+      #home .content #feature .mrg-top {
+        margin-top: 2em;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: auto; }
+        #home .content #feature .mrg-top .col-md-3 h3 {
+          text-transform: uppercase;
+          font-family: 'Cabin', sans-serif;
+          color: #F44336;
+          margin-top: 1.5em;
+          margin-right: auto;
+          margin-bottom: auto;
+          margin-left: auto; }
+        #home .content #feature .mrg-top .col-md-3 p {
+          line-height: 2.5em; }
+        #home .content #feature .mrg-top .col-left h3 {
+          text-align: right; }
+        #home .content #feature .mrg-top .col-right h3 {
+          text-align: left; }
+        #home .content #feature .mrg-top .col-md-4 img {
+          width: 100%;
+          height: auto; }
+    #home .content #clients {
+      background-color: #FF9800;
+      padding-top: 4em;
+      padding-right: 0;
+      padding-bottom: 4em;
+      padding-left: 0; }
+      #home .content #clients .col-md-12 {
+        text-align: center; }
+        #home .content #clients .col-md-12 h1 {
+          font-size: 2.5em;
+          text-transform: uppercase;
+          font-family: 'Cabin', sans-serif; }
+        #home .content #clients .col-md-12 p {
+          font-size: 1.1em;
+          font-weight: 500;
+          padding-top: 0;
+          padding-right: 5em;
+          padding-bottom: 0;
+          padding-left: 5em; }
+      #home .content #clients .col-md-2 {
+        margin-top: 2em;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: auto; }
+        #home .content #clients .col-md-2 img {
+          width: 100%;
+          height: auto; }
+
+@media (min-width: 320px) and (max-width: 960px) {
+  #home .content #about .col-md-4 p {
+    width: 100%;
+    height: auto;
+    text-align: justify; }
+  #home .content #feature {
+    padding-top: 1em;
+    padding-right: 0em;
+    padding-bottom: 1em;
+    padding-left: 0em; }
+    #home .content #feature .col-md-12 p {
+      font-size: 1em;
+      text-align: justify; }
+    #home .content #feature .mrg-top .col-left h3 {
+      text-align: left; }
+    #home .content #feature .mrg-top .mrg-top {
+      margin-top: 0em;
+      margin-right: auto;
+      margin-bottom: auto;
+      margin-left: auto; }
+    #home .content #feature .mrg-top .col-md-3 p {
+      line-height: 1.5em; }
+  #home .content #clients {
+    padding-top: 1em;
+    padding-right: 0em;
+    padding-bottom: 1em;
+    padding-left: 0em; }
+    #home .content #clients .col-md-12 p {
+      padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      font-size: 1em;
+      text-align: left; } }
+@media (min-width: 600px) and (orientation: portrait) {
+  #home .content .col-md-12 p {
+    padding-top: 0;
+    padding-right: 2em;
+    padding-bottom: 0;
+    padding-left: 2em; } }
+/*------------------------------------------------------------About.css---------------------------------------------*/
+#about {
+  display: table;
+  width: 100%;
+  height: auto; }
+  #about .content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; }
+    #about .content #banner {
+      display: table;
+      width: 100%;
+      height: 100%; }
+      #about .content #banner img {
+        width: 100%;
+        height: 100%; }
+    #about .content #about {
+      background: black;
+      background: -webkit-linear-gradient(grey, black);
+      background: -o-linear-gradient(grey, black);
+      background: -moz-linear-gradient(grey, black);
+      background: linear-gradient(grey, black);
+      text-align: center;
+      color: white;
+      padding-top: 4em;
+      padding-right: 0em;
+      padding-bottom: 4em;
+      padding-left: 0em; }
+      #about .content #about h1 {
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif; }
+      #about .content #about p {
+        color: #909090;
+        line-height: 2em; }
+    #about .content #strength {
+      text-align: center;
+      padding-top: 4em;
+      padding-right: 0em;
+      padding-bottom: 4em;
+      padding-left: 0em; }
+      #about .content #strength h1 {
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif; }
+      #about .content #strength .col-md-4 h3 {
+        text-align: left;
+        color: #009688;
+        font-family: 'Cabin', sans-serif; }
+      #about .content #strength .col-md-4 p {
+        text-align: left;
+        font-size: 1.1em;
+        line-height: 2em; }
+    #about .content #goals {
+      text-align: center;
+      padding-top: 4em;
+      padding-right: 0em;
+      padding-bottom: 4em;
+      padding-left: 0em;
+      background: #EEE; }
+      #about .content #goals h1 {
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif; }
+      #about .content #goals p {
+        font-size: 1.1em;
+        line-height: 2em;
+        text-align: left; }
+      #about .content #goals .mrg-top {
+        margin-top: 2em;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: auto; }
+      #about .content #goals .col-md-4 img {
+        width: 100%; }
+
+@media (min-width: 320px) and (max-width: 960px) {
+  #about .content #about {
+    padding-top: 1em;
+    padding-right: 0em;
+    padding-bottom: 1em;
+    padding-left: 0em; }
+  #about .content #strength {
+    padding-top: 1em;
+    padding-right: 0em;
+    padding-bottom: 1em;
+    padding-left: 0em; }
+  #about .content #goals {
+    padding-top: 1em;
+    padding-right: 0em;
+    padding-bottom: 1em;
+    padding-left: 0em; } }
+/*---------------------------------------------------Services.css-----------------------------------------*/
+#services {
+  display: table;
+  width: 100%;
+  height: auto; }
+  #services .content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; }
+    #services .content #banner {
+      display: table;
+      width: 100%;
+      height: 100%; }
+      #services .content #banner img {
+        width: 100%;
+        height: 100%; }
+    #services .content #services {
+      text-align: center;
+      padding-top: 2em;
+      padding-right: 0em;
+      padding-bottom: 2em;
+      padding-left: 0em;
+      background-color: #F5F5F5; }
+      #services .content #services h1 {
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif; }
+      #services .content #services .mrg-top {
+        margin-top: 2em; }
+      #services .content #services h2 {
+        color: #005EA9;
+        font-weight: 400; }
+      #services .content #services p {
+        line-height: 2em; }
+    #services .content #testimonial {
+      padding-top: 2em;
+      padding-right: 0em;
+      padding-bottom: 2em;
+      padding-left: 0em; }
+      #services .content #testimonial img {
+        width: 100%; }
+      #services .content #testimonial h1 {
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif; }
+      #services .content #testimonial p {
+        line-height: 2em;
+        font-size: 1.1em; }
+    #services .content #overview {
+      text-align: center;
+      padding-top: 2em;
+      padding-right: 0em;
+      padding-bottom: 2em;
+      padding-left: 0em;
+      background-color: #F5F5F5; }
+      #services .content #overview h1 {
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif; }
+      #services .content #overview p {
+        font-size: 1.1em; }
+      #services .content #overview h3 {
+        color: #00D999;
+        text-align: left; }
+      #services .content #overview .col-md-3 {
+        text-align: left;
+        line-height: 2em;
+        font-weight: 400; }
+
+/*------------------------------------------Contact.css---------------------------------------------------------*/
+#contact {
+  display: table;
+  width: 100%;
+  height: auto; }
+  #contact .content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; }
+    #contact .content #banner {
+      display: table;
+      width: 100%;
+      height: 100%; }
+      #contact .content #banner img {
+        width: 100%;
+        height: 100%; }
+    #contact .content #contact {
+      background: url(../images/contact.jpg);
+      background-size: 100% 200%;
+      padding-top: 3em;
+      padding-right: 0em;
+      padding-bottom: 3em;
+      padding-left: 0em;
+      color: white; }
+      #contact .content #contact h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif; }
+      #contact .content #contact p {
+        font-size: 1.1em;
+        line-height: 2em; }
+      #contact .content #contact .col-md-6 {
+        padding-top: 0em;
+        padding-right: 2em;
+        padding-bottom: 0em;
+        padding-left: 2em; }
+      #contact .content #contact #contact-form input {
+        width: 100%;
+        height: auto;
+        margin-top: 1em;
+        margin-right: auto;
+        margin-bottom: 1em;
+        margin-left: auto;
+        padding-top: 0.8em;
+        padding-right: 1em;
+        padding-bottom: 0.8em;
+        padding-left: 1em;
+        background: transparent;
+        border: 1px solid white; }
+      #contact .content #contact #contact-form textarea {
+        width: 100%;
+        height: auto;
+        margin-top: 1em;
+        margin-right: auto;
+        margin-bottom: 1em;
+        margin-left: auto;
+        padding-top: 0.8em;
+        padding-right: 1em;
+        padding-bottom: 0.8em;
+        padding-left: 1em;
+        background: transparent;
+        border: 1px solid white; }
+      #contact .content #contact #contact-form button {
+        padding-top: 1em;
+        padding-right: 1.5em;
+        padding-bottom: 1em;
+        padding-left: 1.5em;
+        background: transparent;
+        border: 1px solid white; }
+
+/*------------------------------------------------------Footer.css---------------------------------------------------*/
+.footer {
+  color: white; }
+  .footer .navbar-nav li:after {
+    content: '';
+    background: white;
+    width: 2px;
+    height: 1.5em;
+    position: absolute;
+    top: 1em;
+    left: 100%;
+    display: block; }
+
+@media (min-width: 320px) and (max-width: 960px) {
+  .footer .navbar-nav li:after {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */

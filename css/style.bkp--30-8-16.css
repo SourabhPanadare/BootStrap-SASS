@@ -1,0 +1,508 @@
+body,html{
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+}
+
+/*------------------------------------------Header.css--------------------------------------------*/
+
+.nav>li{
+	text-transform:uppercase;
+}
+
+.navbar-brand>img{
+	width:30%;
+}
+
+.navbar-header{
+	position: relative;
+    transform: translatey(90%);
+}
+
+.navbar-header img{
+	width:35%;
+}
+
+.navbar-nav{
+	padding:1em 0;
+}
+
+.fluid-container{
+	width:90%;
+	margin:auto;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+	background:transparent;
+}
+
+.navbar{
+	margin-bottom:0px;
+}
+
+@media (min-width: 320px) and (max-width:960px)	{
+	.navbar-header{
+		transform: translatey(0%);
+	}
+	.navbar-header img {
+		width: 30%;
+		margin-top: 3%;
+	}
+}
+
+@media (min-width: 600px) and (orientation: portrait){
+	.navbar-header img {
+		width: 20%;
+		margin-top: 2%;
+	}
+}
+
+@media (min-width: 768px) and (orientation: portrait){
+	.navbar-header img {
+		width: 20%;
+		margin-top: 2%;
+	}
+	.navbar-header img {
+		width: 35%;
+		margin-top: 8%;
+	}
+}
+
+/*--------------------------------------------Home.css--------------------------------------------------*/
+
+#home{
+	display:table;
+	width:100%;
+}
+
+#home .content{
+	position:fixed;
+	width:100%;
+	height:100%;
+	overflow-y:auto;
+}
+
+#home #banner{
+	width:100%;
+	height:100%;
+	display:table;
+}
+
+#home #banner img{
+	width:100%;
+	height:100%;
+}
+
+#home #about{
+	background-color: #009688;
+	padding:2em 0;
+}
+#home #about  .col-md-4{
+	text-align:center;
+}
+
+#home #about .col-md-4 h3{
+	color:white;
+}
+
+#home #about .col-md-4 p{
+	width:80%;
+	margin:auto;
+	line-height:2em;
+}
+
+#home #feature{
+	padding:4em 0;
+}
+
+#home #feature .col-md-12{
+	text-align:center;
+}
+
+#home #feature .col-md-12 h1{
+	font-size:2.5em;
+	text-transform:uppercase;
+	font-family: 'Cabin', sans-serif;
+	color: #F44336;
+}
+
+#home #feature .col-md-12 p{
+	font-size:1.1em;
+	font-weight:500;
+}
+
+#home #feature .col-md-3 h3{
+	text-transform:uppercase;
+	font-family: 'Cabin', sans-serif;
+	color: #F44336;
+	margin-top:1.5em;
+}
+
+#home #feature .col-left h3{
+	text-align:right;
+}
+
+#home #feature .col-right h3{
+	text-align:left;
+}
+
+#home #feature .col-md-3 p{
+	line-height:2.5em;
+}
+
+#home #feature .col-md-4 img{
+	width:100%;
+}
+
+#home #feature .mrg-top{
+	margin-top:2em;
+}
+
+#home #clients{
+	background-color: #FF9800;
+	padding:4em 0;
+}
+
+#home #clients .col-md-12{
+	text-align:center;
+}
+
+#home #clients .col-md-12 h1{
+	font-size:2.5em;
+	text-transform:uppercase;
+	font-family: 'Cabin', sans-serif;
+}
+
+#home #clients .col-md-12 p{
+	font-size:1.1em;
+	font-weight:500;
+	padding: 0 5em;
+}
+
+#home #clients .col-md-2{
+	margin-top:2em;
+}
+
+#home #clients .col-md-2 img{
+	width:100%;
+}
+
+@media (min-width: 320px) and (max-width:960px)	{
+	
+	#home #clients .col-md-12 p{
+		padding:0 1em;
+	}
+	#home #about .col-md-4 p{
+		width:100%;
+		text-align:justify;
+	}
+	#home #feature .col-md-12 p{
+		font-size:1em;
+		text-align:justify;
+	}
+	#home #feature .col-left h3{
+		text-align:left;
+	}
+	#home #feature{
+		padding:1em 0;
+	}
+	#home #feature .mrg-top {
+		margin-top: 0em;
+	}
+	#home #feature .col-md-3 p {
+		line-height: 1.5em;
+	}
+	#home #clients{
+		padding:1em 0;
+	}
+	#home #clients .col-md-12 p {
+		padding: 0;
+		font-size: 1em;
+		text-align: left;
+	}
+	
+}
+
+@media (min-width: 600px) and (orientation: portrait){
+	
+	#home #clients .col-md-12 p{
+		padding:0 2em;
+	}
+	
+}
+/*------------------------------------------------------------About.css---------------------------------------------*/
+
+
+#about{
+	display:table;
+	width:100%;
+}
+
+#about .content{
+	position:fixed;
+	width:100%;
+	height:100%;
+	overflow-y:auto;
+}
+
+#about #banner{
+	width:100%;
+	height:100%;
+	display:table;
+}
+
+#about #banner img{
+	width:100%;
+	height:100%;
+}
+
+#about #about{
+	background: black;
+    background: -webkit-linear-gradient(grey, black);
+    background: -o-linear-gradient(grey, black);
+    background: -moz-linear-gradient(grey, black);
+    background: linear-gradient(grey, black);
+	text-align:center;
+	color:white;
+	padding:4em 0;
+}
+
+#about #about h1{
+	text-transform:uppercase;
+	font-family: 'Cabin', sans-serif;
+}
+
+#about #about p{
+	 color: #909090;
+	 line-height:2em;
+}
+
+#about #strength{
+	text-align:center;
+	padding:4em 0;
+}
+
+#about #strength h1{
+	text-transform:uppercase;
+	font-family: 'Cabin', sans-serif;
+}
+
+#about #strength .col-md-4 h3{
+	text-align:left;
+	color: #009688;
+	font-family: 'Cabin', sans-serif;
+}
+
+#about #strength .col-md-4 p{
+	text-align:left;
+	font-size:1.1em;
+	line-height:2em;
+}
+
+#about #goals{
+	text-align:center;
+	padding:4em 0;
+	background:#EEE;
+}
+
+#about #goals h1{
+	text-transform:uppercase;
+	font-family: 'Cabin', sans-serif;
+}
+
+#about #goals .col-md-4 img{
+	width:100%;
+}
+
+#about #goals .mrg-top{
+	margin-top:2em;
+}
+
+#about #goals p{
+	font-size:1.1em;
+	line-height:2em;
+	text-align:left;
+}
+
+@media (min-width: 320px) and (max-width:960px)	{
+	#about #about,#about #strength,#about #goals{
+		padding:1em 0;
+	}
+}
+
+/*---------------------------------------------------Services.css-----------------------------------------*/
+#services{
+	display:table;
+	width:100%;
+}
+
+#services .content{
+	position:fixed;
+	width:100%;
+	height:100%;
+	overflow-y:auto;
+}
+
+#services #banner{
+	width:100%;
+	height:100%;
+	display:table;
+}
+
+#services #banner img{
+	width:100%;
+	height:100%;
+}
+
+#services #services{
+	text-align:center;
+	padding:2em 0;
+	background-color: #F5F5F5;
+}
+
+#services #services h1{
+	text-transform:uppercase;
+	font-family: 'Cabin', sans-serif;
+}
+
+#services #services .mrg-top{
+	margin-top:2em;
+}
+
+#services #services h2{
+	color: #005EA9;
+	font-weight:400;
+}
+
+#services #services p{
+	line-height:2em;
+}
+
+#services #testimonial{
+	padding:2em 0;
+}
+
+#services #testimonial img{
+	width:100%;
+}
+
+#services #testimonial h1{
+	text-transform:uppercase;
+	font-family: 'Cabin', sans-serif;
+}
+
+#services #testimonial p{
+	line-height:2em;
+	font-size:1.1em;
+}
+
+#services #overview{
+	text-align:center;
+	padding:2em 0;
+	background-color: #F5F5F5;
+}
+
+#services #overview h1{
+	text-transform:uppercase;
+	font-family: 'Cabin', sans-serif;
+}
+
+#services #overview p{
+	font-size:1.1em;
+}
+
+#services #overview h3{
+	color: #00D999;
+	text-align:left;
+}
+
+#services #overview .col-md-3{
+	text-align:left;
+	line-height:2em;
+	font-weight:400;
+}
+
+/*------------------------------------------Contact.css---------------------------------------------------------*/
+
+#contact{
+	display:table;
+	width:100%;
+}
+
+#contact .content{
+	position:fixed;
+	width:100%;
+	height:100%;
+	overflow-y:auto;
+}
+
+#contact #banner{
+	width:100%;
+	height:100%;
+	display:table;
+}
+
+#contact #banner img{
+	width:100%;
+	height:100%;
+}
+
+#contact #contact{
+	background:url(../images/contact.jpg);
+	background-size:100% 200%;
+	padding:3em 0;
+	color:white;
+/*     background-attachment: fixed;
+    background-size: contain;
+    background-position: center; */
+}
+
+#contact #contact h2{
+	text-align:center;
+	text-transform:uppercase;
+	font-family: 'Cabin', sans-serif;
+}
+
+#contact #contact p{
+	font-size:1.1em;
+	line-height:2em;
+}
+
+#contact #contact .col-md-6{
+	padding:0 2em;
+}
+
+#contact-form input,#contact-form textarea{
+	width:100%;
+	margin:1em auto;
+	padding:0.8em 1em;
+	background:transparent;
+	border:1px solid white;
+}
+
+#contact-form  button{
+	padding: 1em 1.5em;
+    background: transparent;
+    border: 1px solid white;
+}
+/*------------------------------------------------------Footer.css---------------------------------------------------*/
+
+.footer{
+	color:white;
+}
+
+.footer .navbar-nav li:after{
+	content: '';
+    background: white;
+    width: 2px;
+    height: 1.5em;
+    position: absolute;
+    top: 1em;
+	left:100%;
+}
+
+@media (min-width: 320px) and (max-width:960px)	{
+	.footer .navbar-nav li:after{
+		display:none;
+	}
+}

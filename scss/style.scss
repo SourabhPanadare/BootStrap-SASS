@@ -1,0 +1,595 @@
+@mixin margin-adjust($mrgtop,$mrgright,$mrgbottom,$mrgleft) {
+	margin: {
+		top: $mrgtop;
+		right: $mrgright;
+		bottom: $mrgbottom;
+		left: $mrgleft;
+	}
+}
+
+@mixin padding-adjust($paddtop,$paddright,$paddbottom,$paddleft) {
+	padding: {
+		top: $paddtop;
+		right: $paddright;
+		bottom: $paddbottom;
+		left: $paddleft;
+	}
+}
+
+
+@mixin wh-adjust($width,$height) {
+	width: $width;
+	height: $height;
+}
+
+
+html,body{
+	@include margin-adjust (0,0,0,0);
+	@include padding-adjust (0,0,0,0);
+	overflow-x:hidden;
+}
+
+/*------------------------------------------Header.css--------------------------------------------*/
+
+.navbar{
+	@include margin-adjust (auto,auto,0,auto);
+	
+	.fluid-container{
+		@include wh-adjust(90%,auto);
+		@include margin-adjust (auto,auto,auto,auto);
+	
+		.navbar-header{
+			position: relative;
+			transform: translatey(90%);
+		
+			img{
+				@include wh-adjust(35%,auto);
+			}
+		}
+		
+		.navbar-nav{
+			@include padding-adjust (1em,0,1em,0);
+			
+			li{
+				text-transform:uppercase;
+			}
+		}
+	}
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+	background:transparent;
+}
+
+@media (min-width: 320px) and (max-width:960px)	{
+.navbar{
+
+	.fluid-container{
+		.navbar-header{
+			transform: translatey(0%);
+		
+			img{
+				@include wh-adjust(30%,auto);
+				@include margin-adjust (3%,auto,auto,auto);
+			}
+		}
+	}
+}
+}
+
+@media (min-width: 600px) and (orientation: portrait){
+	.navbar{
+
+		.fluid-container{
+			.navbar-header{
+				img{
+					@include wh-adjust(20%,auto);
+					@include margin-adjust (2%,auto,auto,auto);
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (orientation: portrait){
+	.navbar{
+
+		.fluid-container{
+			.navbar-header{
+				img{
+					@include wh-adjust(35%,auto);
+					@include margin-adjust (8%,auto,auto,auto);
+				}
+			}
+		}
+	}
+}
+
+/*--------------------------------------------Home.css--------------------------------------------------*/
+
+#home{
+	display:table;
+	@include wh-adjust(100%,auto);
+	
+	.content{
+		position:fixed;
+		@include wh-adjust(100%,100%);
+		overflow-y:auto;
+		
+		#banner{
+			display:table;
+			@include wh-adjust(100%,100%);
+			
+			img{
+				@include wh-adjust(100%,100%);
+			}
+		}
+		
+		#about{
+			background-color: #009688;
+			@include padding-adjust (2em,0,2em,0);
+		
+			.col-md-4{
+				text-align:center;
+			
+				h3{
+					color:white;
+				}
+				
+				p{
+					@include wh-adjust(80%,auto);
+					@include margin-adjust (auto,auto,auto,auto);
+					line-height:2em;
+				}
+			}
+		}
+		
+		#feature{
+			@include padding-adjust (4em,0,4em,0);
+			
+			.col-md-12{
+				text-align:center;
+			
+				 h1{
+					font-size:2.5em;
+					text-transform:uppercase;
+					font-family: 'Cabin', sans-serif;
+					color: #F44336;
+				}
+				
+				p{
+					font-size:1.1em;
+					font-weight:500;
+				}
+			}
+			
+			.mrg-top{
+				@include margin-adjust (2em,auto,auto,auto);
+				
+				.col-md-3{
+					h3{
+						text-transform:uppercase;
+						font-family: 'Cabin', sans-serif;
+						color: #F44336;
+						@include margin-adjust (1.5em,auto,auto,auto);
+					}
+				
+					p{
+						line-height:2.5em;
+					}
+				}
+			
+				.col-left{
+					h3{
+						text-align:right;
+					}
+				}
+			
+				.col-right{
+					h3{
+						text-align:left;
+					} 
+				}
+			
+				.col-md-4{
+					img{
+						@include wh-adjust(100%,auto);
+					}
+				}
+			}
+		}
+		
+		#clients{
+			background-color: #FF9800;
+			@include padding-adjust (4em,0,4em,0);
+			
+			.col-md-12{
+				text-align:center;
+				
+				 h1{
+					font-size:2.5em;
+					text-transform:uppercase;
+					font-family: 'Cabin', sans-serif;
+				}
+				
+				p{
+					font-size:1.1em;
+					font-weight:500;
+					@include padding-adjust (0,5em,0,5em);
+				}
+			}
+			
+			.col-md-2{
+				@include margin-adjust (2em,auto,auto,auto);
+				
+				img{
+					@include wh-adjust(100%,auto);
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width:960px)	{
+	#home{
+		.content{
+			#about{
+				 .col-md-4{
+					p{
+						@include wh-adjust(100%,auto);
+						text-align:justify;
+					}
+				 }
+			}
+
+			#feature{
+				@include padding-adjust (1em,0em,1em,0em);
+				
+				.col-md-12{
+					p{
+						font-size:1em;
+						text-align:justify;
+					}
+				}
+				
+				.mrg-top{
+					.col-left{
+						h3{
+							text-align:left;
+						}
+					}
+				
+					.mrg-top{
+						@include margin-adjust (0em,auto,auto,auto);
+					}
+				
+					.col-md-3{
+						p{
+							line-height: 1.5em;
+						}
+					}
+				}
+			}
+			
+			#clients{
+				@include padding-adjust (1em,0em,1em,0em);
+			
+				.col-md-12{
+					p{
+						@include padding-adjust (0,0,0,0);
+						font-size: 1em;
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 600px) and (orientation: portrait){
+	#home{
+		.content{
+			.col-md-12{
+				p{
+					@include padding-adjust (0,2em,0,2em);
+				}
+			}
+		}
+	}
+}
+
+/*------------------------------------------------------------About.css---------------------------------------------*/
+
+#about{
+	display:table;
+	@include wh-adjust(100%,auto);
+	
+	.content{
+		position:fixed;
+		@include wh-adjust(100%,100%);
+		overflow-y:auto;
+		
+		#banner{
+			display:table;
+			@include wh-adjust(100%,100%);
+			
+			img{
+				@include wh-adjust(100%,100%);
+			}
+		}
+		
+		 #about{
+			background: black;
+			background: -webkit-linear-gradient(grey, black);
+			background: -o-linear-gradient(grey, black);
+			background: -moz-linear-gradient(grey, black);
+			background: linear-gradient(grey, black);
+			text-align:center;
+			color:white;
+			@include padding-adjust (4em,0em,4em,0em);
+			
+			 h1{
+				text-transform:uppercase;
+				font-family: 'Cabin', sans-serif;
+			}
+			
+			 p{
+				color: #909090;
+				line-height:2em;
+			}
+		}
+		
+		#strength{
+			text-align:center;
+			@include padding-adjust (4em,0em,4em,0em);
+			
+			h1{
+				text-transform:uppercase;
+				font-family: 'Cabin', sans-serif;
+			}
+			
+			.col-md-4{
+				h3{
+					text-align:left;
+					color: #009688;
+					font-family: 'Cabin', sans-serif;
+				}
+				
+				p{
+					text-align:left;
+					font-size:1.1em;
+					line-height:2em;
+				}
+			}
+		}
+
+		#goals{
+			text-align:center;
+			@include padding-adjust (4em,0em,4em,0em);
+			background:#EEE;
+			
+			h1{
+				text-transform:uppercase;
+				font-family: 'Cabin', sans-serif;
+			}
+			
+			p{
+				font-size:1.1em;
+				line-height:2em;
+				text-align:left;
+			}
+			
+			.mrg-top{
+				@include margin-adjust (2em,auto,auto,auto);
+			}
+			
+			.col-md-4{
+				img{
+					width:100%;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width:960px)	{
+	#about{
+		.content{
+			 #about{
+				@include padding-adjust (1em,0em,1em,0em);
+			 }
+			 
+			 #strength{
+				@include padding-adjust (1em,0em,1em,0em);
+			 }
+			 
+			  #goals{
+				@include padding-adjust (1em,0em,1em,0em);
+			  }
+		}
+	}
+}
+
+/*---------------------------------------------------Services.css-----------------------------------------*/
+#services{
+	display:table;
+	@include wh-adjust(100%,auto);
+	
+	.content{
+		position:fixed;
+		@include wh-adjust(100%,100%);
+		overflow-y:auto;
+		
+		#banner{
+			display:table;
+			@include wh-adjust(100%,100%);
+			
+			img{
+				@include wh-adjust(100%,100%);
+			}
+		}
+		
+		#services{
+			text-align:center;
+			@include padding-adjust (2em,0em,2em,0em);
+			background-color: #F5F5F5;
+			
+			h1{
+				text-transform:uppercase;
+				font-family: 'Cabin', sans-serif;
+			}
+			
+			.mrg-top{
+				margin-top:2em;
+			}
+			
+			h2{
+				color: #005EA9;
+				font-weight:400;
+			}
+			
+			p{
+				line-height:2em;
+			}
+		}
+		
+		#testimonial{
+			@include padding-adjust (2em,0em,2em,0em);
+			
+			 img{
+				width:100%;
+			}
+			 
+			h1{
+				text-transform:uppercase;
+				font-family: 'Cabin', sans-serif;
+			}
+			
+			p{
+				line-height:2em;
+				font-size:1.1em;
+			}
+		}
+		
+		#overview{
+			text-align:center;
+			@include padding-adjust (2em,0em,2em,0em);
+			background-color: #F5F5F5;
+			
+			h1{
+				text-transform:uppercase;
+				font-family: 'Cabin', sans-serif;
+			}
+			
+			 p{
+				font-size:1.1em;
+			}
+			
+			h3{
+				color: #00D999;
+				text-align:left;
+			}
+			
+			.col-md-3{
+				text-align:left;
+				line-height:2em;
+				font-weight:400;
+			}
+		}
+	}
+}	
+
+@media (min-width: 320px) and (max-width:960px)	{
+	
+}
+
+/*------------------------------------------Contact.css---------------------------------------------------------*/
+
+#contact{
+	display:table;
+	@include wh-adjust(100%,auto);
+	
+	.content{
+		position:fixed;
+		@include wh-adjust(100%,100%);
+		overflow-y:auto;
+		
+		#banner{
+			display:table;
+			@include wh-adjust(100%,100%);
+			
+			img{
+				@include wh-adjust(100%,100%);
+			}
+		}
+		
+		#contact{
+			background:url(../images/contact.jpg);
+			background-size:100% 200%;
+			@include padding-adjust (3em,0em,3em,0em);
+			color:white;
+			
+			 h2{
+				text-align:center;
+				text-transform:uppercase;
+				font-family: 'Cabin', sans-serif;
+			}
+			
+			p{
+				font-size:1.1em;
+				line-height:2em;
+			}
+			
+			.col-md-6{
+				@include padding-adjust (0em,2em,0em,2em);
+			}
+			
+			#contact-form{
+				input{
+					@include wh-adjust(100%,auto);
+					@include margin-adjust(1em,auto,1em,auto);
+					@include padding-adjust(0.8em,1em,0.8em,1em);
+					background:transparent;
+					border:1px solid white;
+				}
+				textarea{
+					@include wh-adjust(100%,auto);
+					@include margin-adjust(1em,auto,1em,auto);
+					@include padding-adjust(0.8em,1em,0.8em,1em);
+					background:transparent;
+					border:1px solid white;
+				}
+				button{
+					@include padding-adjust(1em,1.5em,1em,1.5em);
+					background: transparent;
+					border: 1px solid white;
+				}
+			}
+		}
+	}
+}
+
+/*------------------------------------------------------Footer.css---------------------------------------------------*/
+
+.footer{
+	color:white;
+	
+	.navbar-nav li:after{
+		content: '';
+		background: white;
+		width: 2px;
+		height: 1.5em;
+		position: absolute;
+		top: 1em;
+		left:100%;
+		display:block;
+	}
+}
+
+@media (min-width: 320px) and (max-width:960px)	{
+	.footer{
+		.navbar-nav li:after{
+			display:none;
+		}
+	}
+}
