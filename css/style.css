@@ -39,16 +39,20 @@ html, body {
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
   background: transparent; }
 
+.header .active a {
+  color: #CC0000 !important; }
+
 @media (min-width: 320px) and (max-width: 960px) {
-  .navbar .fluid-container .navbar-header {
-    transform: translatey(0%); }
-    .navbar .fluid-container .navbar-header img {
-      width: 30%;
-      height: auto;
-      margin-top: 3%;
-      margin-right: auto;
-      margin-bottom: auto;
-      margin-left: auto; } }
+  .navbar .fluid-container .navbar-header img {
+    width: 85px;
+    height: auto;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto; }
+
+  .header .fluid-container .navbar-header {
+    transform: translatey(0%); } }
 @media (min-width: 600px) and (orientation: portrait) {
   .navbar .fluid-container .navbar-header img {
     width: 20%;
@@ -445,6 +449,8 @@ html, body {
     top: 1em;
     left: 100%;
     display: block; }
+  .footer .navbar-nav li:nth-last-child(1):after {
+    background: transparent; }
 
 @media (min-width: 320px) and (max-width: 960px) {
   .footer .navbar-nav li:after {
