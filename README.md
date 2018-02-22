@@ -1,4 +1,8 @@
-
+# Install SASS
+    sudo apt-get install ruby-dev
+    
+    sudo gem install sass
+    
     sass --watch app/sass:public/stylesheets
 
 # Variables
